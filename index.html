@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Application Tour</title>
+        <meta name="author" content="">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,700,700i" rel="stylesheet">
+        <link href="css/mw_common.css" rel="stylesheet">
+        <link href="css/dashboard.css" rel="stylesheet">
+        <link href="css/tour.css" rel="stylesheet">
+    </head>
+<body>
+
+    <header>
+        <div class="container-fluid header-container">
+            <div class="row">
+                <div class="col-sm-12 header-box">
+                    <img class="logo" src="images/miracle-essential-oils-logo.svg" alt="Miracle Essential Oils Logo">
+                    <h1 class="hidden-xs"><strong>Miracle Worker</strong><br> Benefits Program</h1>
+                    <div class="header-user-buttons docEventHide">
+                        <!-- below button and span elements must be in same line for styling purposes -->
+                        <button id="questions-btn" class="hidden-xs"><i class="fa fa-question-circle" aria-hidden="true"></i></button><button id="cart-btn"><div class="cart-counter"></div><i class="fa fa-shopping-cart" aria-hidden="true"></i></button><span class="user-header-divider">&nbsp;</span>
+                        <div class="user-btn-container hidden-xs">
+                            <button id="user-btn">
+                                <p class="user-name">Hi!</p>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-drop-container hidden-xs navDropElm">
+            <a href="/miracle-worker/account" class="my-account">My Account</a>
+            <a href="/miracle-worker/logout" class="sign-out">Sign Out</a>
+        </div>
+        <div class="cart-drop-container navDropElm">
+    
+            <div id="cart-template" class="cart-product" style="display: none;">
+                <div class="cart-product-image">
+                    <img src="" alt="cart-image">
+                </div>
+                <div class="cart-product-info">
+                    <p class="cart-product-name"></p>
+                    <p class="cart-product-price"></p>
+                    <p class="cart-product-volume">15mL</p>
+                    <p class="cart-product-qty">Quantity: <span></span></p>
+                </div>
+                <div class="cart-product-remove">
+                    <button class="remove"><img src="images/remove-item.svg" alt="Remove"></button>
+                </div>
+            </div>
+    
+            <div class="cart-drop-box"></div>
+    
+            <div class="cart-checkout">
+                <p class="cart-total">Total: <span>$0.00</span></p>
+                <a href="/miracle-worker/store/shipping" class="cart-checkout-btn">Check Out <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="questions-drop-container hidden-xs navDropElm">
+            <form id="contact-form-desktop" class="contact-form" action=""> <!-- contact@miracleessentialoils.com -->
+                <fieldset class="submitSuccess">
+                    <legend>Your Form Has Been Sent Successfully</legend>
+                    <p>We will get back to you shortly</p>
+                    <button>Close</button>
+                </fieldset>
+                <fieldset class="contactFieldset">
+                    <legend>How Can We Help?</legend>
+                    <p>Send us a message with any questions and we will get back to you shortly.</p>
+                    <textarea placeholder="write your message here..."></textarea>
+                    <button type="submit" class="contact-submit">Submit <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                </fieldset>
+            </form>
+            <a href="#" class="contact">Contact An Expert</a>
+            <a href="/miracle-worker/frequently-asked-questions" class="faqs">View FAQ's</a>
+            <a href="#/tour" class="tour">Miracle Worker Tour</a>
+        </div>
+    </header>
+
+
+    <nav class="nav" role="navigation">
+        <button class="mobile-nav visible-xs-block"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="contact-form-mobile-container">
+            <form id="contact-form-mobile" class="contact-form" action="">
+                <fieldset class="submitSuccess">
+                    <legend>Your Form Has Been Sent Successfully</legend>
+                    <p>We will get back to you shortly</p>
+                    <button>Close</button>
+                </fieldset>
+                <fieldset class="contactFieldset">
+                    <button class="mobile-contact-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                    <legend>How Can We Help?</legend>
+                    <p>Send us a message with any questions and we will get back to you shortly.</p>
+                    <textarea placeholder="write your message here..."></textarea>
+                    <button type="submit" class="contact-submit">Submit <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="nav-box">
+            <div class="navbar-header">
+                <a class="home" href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+                <a class="store" href="/miracle-worker/store"><i class="fa fa-shopping-cart" aria-hidden="true"></i>STORE</a>
+                <a class="share" href="/miracle-worker/share/overview"><i class="fa fa-gift" aria-hidden="true"></i>SHARE</a>
+                <a class="reports" href="/miracle-worker/reports"><i class="fa fa-bar-chart" aria-hidden="true"></i>REPORTS</a>
+            </div>
+            <div class="mobile-subnav visible-xs">
+                <a class="account" href="/miracle-worker/account">MY ACCOUNT</a>
+                <!--<a class="notifications" href="#">NOTIFICATIONS</a>-->
+                <a class="faqs" href="/miracle-worker/frequently-asked-questions">VIEW FAQS</a>
+                <a class="contact" href="#">CONTACT AN EXPERT</a>
+                <a class="tour" href="#/tour">MIRACLE WORKER TOUR</a>
+                <a class="tour" href="/miracle-worker/logout">SIGN OUT</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="tour-section">
+        <div class="tour-step-box">
+            <p class="tour-slide-count">1/7</p>
+            <div class="slide-shared-elements">
+                <img class="tour-arrow" src="images/tour-arrow.png" alt="Arrow">
+            </div>
+            <button class="tour-mobile-close visible-xs-block"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div id="slide-1" class="slide-content">
+                <h2 class="tour-title">Welcome,<br class="visible-xs-block"> User</h2>
+                <p>We're excited that you've joined the Miracle Worker Benefits Program! We know you'll enjoy exploring everything there is to know about Miracle Essential Oils&trade;!<br><br>Would you like to take a quick tour to find out how the program works?</p>
+                <button class="next">Let's Start the Tour!<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">No thanks, I'll learn on my own.</a>
+            </div>
+            <div id="slide-2" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                <h2 class="tour-title">Miracle Store</h2>
+                <p>As a Miracle Worker, you receive up to 30% off all of our products! Purchase all your oils by visiting this store to get discounts and <strong>FREE</strong> shipping!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-3" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                <h2 class="tour-title">Share &amp; Earn</h2>
+                <p>Visit this section to share Miracle Essential Oils campaigns and earn commission for your referrals! Check back often as we love to sneak in new promotions!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-4" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><img src="images/share-img-icon.png" alt="Share Icon"></div>
+                <h2 class="tour-title">Sharing Link</h2>
+                <p>Use this button to quickly share any of your available Miracle Worker campaigns. <span class="hidden-xs">You can earn purchase commissions, money for referring friends and much more.</span><br><br>We make it easy to share on Facebook, Twitter, Email or anywhere!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-5" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><img src="images/account-img-icon.png" alt="Account Icon"></div>
+                <h2 class="tour-title">Account Information</h2>
+                <p>Click the gear icon in the top right corner to access and edit your current account information. You can also add or edit your personal photo!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-6" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><img src="images/payouts-img-icon.png" alt="Payouts Icon"></div>
+                <h2 class="tour-title">Payouts</h2>
+                <p>This is where you can see all of your current payouts as well as pending payouts you have earned by sharing Miracle Essential Oils&trade; with your friends and family!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-7" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><img src="images/recommended-img-icon.png" alt="Recommended Icon"></div>
+                <h2 class="tour-title">Recommended For You</h2>
+                <p>Based on your past purchases, Miracle Essential Oils&trade; will hand pick a recommended product for you to help you continue your essential oil journey!</p>
+                <button class="next">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+            <div id="slide-8" class="slide-content">
+                <div class="visible-xs-block mobile-tour-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                <h2 class="tour-title">Questions?</h2>
+                <p>We're always here to help! Use this button to contact us at any time, no matter what your questions may be. We will be sure to get back to you in a timely fashion.</p>
+                <button class="next">Exit Tour<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <a href="#">I've learned enough,<br class="visible-xs-block"> take me out of the tour.</a>
+            </div>
+        </div>
+    
+        <div class="tour-bg"></div>
+    </section>
+
+    <!-- Miracle Worker Program Content -->
+    <section>
+        <div class="container-fluid mw-program-container">
+            <div class="row">
+                <div class="col-sm-12 dashboard-content">
+                    <div class="row">
+                        <div class="col-sm-12 section-title">
+                            <h2>Home</h2>
+                            <a class="share-pop-btn" href="#">Share Referral Link
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 dashboard-left-content">
+                            <div class="row">
+                                <div class="user-box col-sm-12">
+                                    <div class="dashboard-wrapper">
+                                        <a href="/miracle-worker/account" class="user-settings-btn"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                        <button class="user-photo">
+                                            <img src="images/user-pic.png" alt="Miracle Worker User">
+                                        </button>
+                                        <span class="headline-divider"></span>
+                                        <h3>User</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="status-box col-md-6">
+                                    <div class="dashboard-wrapper">
+                                        <h4>Current Status</h4>
+                                        <span class="headline-divider"></span>
+                                        <div class="status-icon herbal-hobbyist">
+                                            <i class="fa fa-envira" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="status-headline">Herbal Hobbyist</p>
+                                    </div>
+                                </div>
+                                <div class="articles-box col-md-6">
+                                    <div class="dashboard-wrapper">
+                                        <h4>Next Articles</h4>
+                                        <span class="headline-divider"></span>
+                                        <a href="#">Overview of Miracle Oils</a><br>
+                                        <a href="#">The History of Essential Oils</a><br>
+                                        <a href="#">The History of Aromatherapy</a><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="payouts-box col-sm-12">
+                                    <div class="dashboard-wrapper">
+                                        <h4>Lifetime Payouts</h4>
+                                        <span class="headline-divider"></span>
+                                        <p class="lifetime-payout-amount">$98,023</p>
+                                        <p class="pending-payout-amount"><span>Pending Payouts</span>
+                                            <strong>${{ $pending }}</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 dashboard-right-content">
+                            <div class="row">
+                                <div class="milestones-box col-sm-12">
+                                    <div class="dashboard-wrapper">
+                                        <div class="coming-soon-container">
+                                            <div class="coming-soon-box">
+                                                <div class="coming-soon-content">
+                                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                    <p>The Miracle Academy<span>Coming Soon</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>Miracle Milestones</h3>
+                                        <span class="headline-divider"></span>
+                                        <div class="milestone-icons-container">
+                                            <div class="icon-box icon-lock unlocked"></div>
+                                            <div class="icon-box icon-question"></div>
+                                            <div class="icon-box icon-airplane"></div>
+                                            <div class="icon-box icon-gift"></div>
+                                            <div class="icon-box icon-camera"></div>
+                                            <div class="icon-box icon-book"></div>
+                                            <div class="icon-box icon-bag"></div>
+                                            <div class="icon-box icon-map"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="recommended-box col-md-6">
+                                    <div class="dashboard-wrapper">
+                                        <h4>Recommended<br> For You</h4>
+                                        <span class="headline-divider"></span>
+                                        <img class="recommended-product-img" src="images/lavender.png" alt="Lavender">
+                                        <p class="recommended-product-name">Lavender</p>
+                                        <p class="recommended-product-price">$14.95</p>
+                                    </div>
+                                </div>
+                                <div class="help-box col-md-6">
+                                    <div class="dashboard-wrapper">
+                                        <button class="dashboard-help-btn">
+                                            <i class="fa fa-comments" aria-hidden="true"></i>
+                                            <p>Need<br> Help?</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- END .dashboard-right-content -->
+                    </div> <!-- END .dashboard-content -->
+                </div> <!-- END .section-title -->
+            </div> <!-- END .row -->
+        </div> <!-- END .mw-program-container -->
+    </section>
+    <!-- End Miracle Worker Program Content -->
+
+
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        Copyright &copy; 2016 Miracle Essential Oils. All rights reserved. <a href="https://www.miracleessentialoil.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
+                        <a href="https://www.miracleessentialoil.com/privacy" target="_blank">Privacy Policy</a> |
+                        <a href="https://www.miracleessentialoil.com/miracle-worker-terms" target="_blank">Miracle Worker Terms</a>
+                    </p>
+    
+                    <p>
+                        DISCLAIMER: None of the health topics presented on Miracle Essential Oils have been
+                        evaluated or approved by the FDA. They should not replace personal judgment nor medical
+                        treatment when indicated, nor are they intended to diagnose, treat, cure, or prevent any
+                        disease. Always talk to your naturopathic physician about the use of these or any other
+                        complimentary modalities. *This statement has not been evaluated by the FDA. This
+                        product is not intended to diagnose, treat, cure, or prevent any disease.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://use.fontawesome.com/5c78b4a722.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/navModule.js"></script>
+    <script type="text/javascript" src="js/dropDownModule.js"></script>
+    <script type="text/javascript" src="js/tour.js"></script>
+
+    <script>
+        $(function () {
+            var nav = new navModule();
+            var tour = new tourModule();
+            tour.init({
+                tourContainer : $('.tour-section'),
+                tourBG : $('.tour-bg'),
+                tourStepBox : $('.tour-step-box'),
+                tourArrow : $('.tour-arrow'),
+                tourSlideCount : $('.tour-slide-count'),
+                slideContent : $('.slide-content'),
+                firstStep : $('#slide-1'),
+                currentClass : 'current',
+                targetClass : 'slide-target',
+                finishedRedirect : '#/',
+                targetObjects : [
+                    $('.store'),
+                    $('.share'),
+                    $('.share-pop-btn'),
+                    $('.user-box'),
+                    $('.payouts-box'),
+                    $('.recommended-box'),
+                    $('.help-box')
+                ]
+            });
+
+            $('.slide-content .next').on('click', function() {
+                tour.nextSlide();
+            });
+
+            $('.tour-mobile-close').on('click', function() {
+                tour.closeTour();
+            });
+
+            $('.dashboard-help-btn').on('click', function () {
+
+                if (typeof zE != 'undefined') {
+                    zE.activate({hideOnClose: true});
+                }
+
+            });
+
+            $("button.user-photo").on('click', function(e) {
+                e.preventDefault();
+                $('#upload_modal').modal('show');
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

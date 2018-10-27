@@ -1,0 +1,959 @@
+.green-btn {
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    background-color: #8aa756;
+    color: #fff;
+    font-family: "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border-color: #8aa756;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 100%; }
+    .green-btn:hover {
+      box-shadow: 0px 0px 15px 0px rgba(168, 216, 85, 0.75);
+      text-decoration: none;
+      background-color: #9ABD5D;
+      color: #fff; }
+    .green-btn:focus {
+      text-decoration: none;
+      color: #fff;
+      background-color: #9ABD5D; }
+  
+  .body-thankyou .print-btn {
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    background-color: #8aa756;
+    font-size: 18px;
+    padding: 12px;
+    width: 280px;
+    margin: 0 auto 70px;
+    display: block; }
+  
+  @media print {
+    .body-thankyou .print-btn {
+      display: none; } }
+  
+  .valMsg {
+    visibility: hidden;
+    display: block;
+    font-size: 12px;
+    color: #f62424; }
+  
+  .field-box {
+    height: 65px; }
+  
+  .form-group {
+    margin-bottom: 0; }
+  
+  .form-group .col-sm-6:first-child {
+    margin-bottom: 0; }
+  
+  @media (min-width: 768px) {
+    .form-group .col-sm-6:first-child {
+      margin-bottom: 0; } }
+  
+  .exit-pop-modal .modal-body {
+    padding: 0; }
+  
+  .pop-close {
+    background-color: transparent;
+    border: 0;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 5px 10px;
+    color: #c9ccd6; }
+    .pop-close:hover {
+      color: #555; }
+  
+  .pop-content {
+    font-family: "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    padding: 0 10px; }
+    .pop-content h4 {
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: #555;
+      margin-top: 0;
+      padding-top: 20px;
+      margin-bottom: 25px; }
+      .pop-content h4 span {
+        letter-spacing: 0;
+        display: block;
+        font-weight: bold;
+        font-size: 40px; }
+    .pop-content p {
+      color: #555;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.5em; }
+  
+  .pop-cta {
+    width: 80%;
+    background-color: #00d0dc;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 10px;
+    display: block;
+    margin: 0 auto 15px;
+    border: 0; }
+    .pop-cta:hover {
+      background-color: #04e6f3; }
+  
+  .no-thanks-pop-button {
+    text-decoration: underline;
+    color: #c2c2c2;
+    font-style: italic;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 20px; }
+    .no-thanks-pop-button:hover {
+      color: #a9a9a9; }
+  
+  /* ===================== MEDIA QUERIES =================== */
+  @media (min-width: 768px) {
+    .pop-content {
+      width: 90%;
+      margin-top: 0;
+      padding: 0; }
+      .pop-content h4 {
+        font-size: 24px; }
+        .pop-content h4 span {
+          font-size: 40px; }
+      .pop-content p {
+        font-size: 14px; }
+    .pop-cta {
+      width: auto;
+      position: absolute;
+      z-index: 1;
+      bottom: -28px;
+      left: 50%;
+      margin-left: -199px;
+      margin-bottom: 0;
+      padding: 15px 30px;
+      letter-spacing: 1px;
+      font-size: 24px; } }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .pop-close {
+      padding: 5px 10px; } }
+  
+  @media (min-width: 992px) {
+    .exit-pop-modal .modal-dialog {
+      width: 835px; }
+    .pop-content {
+      margin-top: 32px; }
+      .pop-content h4 {
+        font-size: 30px; }
+      .pop-content p {
+        font-size: 20px; } }
+  
+  @media (min-width: 1200px) {
+    .exit-pop-modal .modal-dialog {
+      width: 1135px; }
+    .pop-content {
+      width: 400px;
+      margin-top: 100px;
+      margin-left: 40px; }
+      .pop-content h4 {
+        font-size: 34px; }
+        .pop-content h4 span {
+          font-size: 50px; } }
+  
+  /* ================== COMMON STYLES ==================== */
+  a:hover {
+    cursor: pointer; }
+  
+  li {
+    list-style-type: none; }
+  
+  img {
+    display: block;
+    max-width: 100%; }
+  
+  .highlight {
+    background-color: #FFFF00;
+    padding: 2px 5px; }
+  
+  .highlight.offset {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 2px 10px; }
+  
+  .bold {
+    font-weight: bold; }
+  
+  .red {
+    color: #ed1c24; }
+  
+  .strike {
+    text-decoration: line-through; }
+  
+  .italic {
+    font-style: italic; }
+  
+  .underline {
+    text-decoration: underline; }
+  
+  .upper {
+    text-transform: uppercase; }
+  
+  .logo {
+    display: block;
+    width: 104px;
+    height: 52px; }
+  
+  .col-sm-6 > .custom-drop + .fa-chevron-down {
+    right: 25px; }
+  
+  .custom-drop {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    background-color: transparent; }
+    .custom-drop + .fa-chevron-down {
+      position: absolute;
+      right: 15px;
+      bottom: 14px;
+      color: #555;
+      z-index: -1; }
+  
+  .custom-drop-parent {
+    position: relative;
+    z-index: 0;
+    box-shadow: none; }
+  
+  .activate-billing {
+    display: inline;
+    width: 20px;
+    height: 15px;
+    margin: 0;
+    vertical-align: middle; }
+  
+  /* ================== MODAL ==================== */
+  #storeModal p {
+    margin-bottom: 20px; }
+  
+  #storeModal .modal-title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.2em;
+    text-align: left;
+    color: #8aa756;
+    text-transform: capitalize;
+    border-bottom-style: dashed;
+    border-width: 2px;
+    margin-bottom: 20px; }
+    #storeModal .modal-title span {
+      font-size: 18px;
+      font-weight: 300;
+      padding-left: 8px; }
+  
+  #storeModal .modal-body img {
+    margin: 0 auto 20px; }
+  
+  #storeModal .modal-content {
+    padding: 10px 20px 30px 20px; }
+  
+  #storeModal .modal-svg {
+    float: left;
+    width: 30px;
+    height: 45px;
+    margin-right: 10px; }
+  
+  #storeModal .modal-benefits {
+    clear: both; }
+  
+  #storeModal .modal-dietary {
+    margin-top: 8px; }
+  
+  #storeModal .modal-topical {
+    margin-top: 4px; }
+  
+  #storeModal .modal-close .close {
+    font-size: 35px;
+    position: relative;
+    z-index: 10; }
+  
+  #storeModal .modal-price {
+    font-size: 22px;
+    font-weight: 300;
+    color: #96b363;
+    float: right; }
+  
+  #storeModal .modal-body-left {
+    text-align: center;
+    margin-bottom: 25px; }
+    #storeModal .modal-body-left.col-sm-12 {
+      margin-bottom: 20px; }
+  
+  #storeModal .modal-img {
+    margin: -30px auto 0; }
+  
+  #storeModal .modal-content {
+    min-height: 465px; }
+  
+  #storeModal .modal-slide-left,
+  #storeModal .modal-slide-right {
+    display: none; }
+  
+  #storeModal .full-add-cart.add-cart {
+    padding: 7px 17px; }
+  
+  #storeModal .full-view-details {
+    width: auto;
+    padding: 6px 5px; }
+  
+  #storeModal #loading {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px; }
+  
+  /* END #storeModal */
+  .modal-title {
+    font: 300 30px "Roboto Slab", "Times New Roman", serif;
+    color: #8aa756;
+    text-align: center; }
+  
+  .modal-body img {
+    margin: 0 auto; }
+  
+  #error_modal .modal-title {
+    color: #ff0000; }
+  
+  /* ================== CHECKOUT COMMON ==================== */
+  .cc-img-box {
+    width: 180px;
+    height: 26px;
+    margin: 0 auto 15px; }
+    .cc-img-box div {
+      float: left;
+      width: 42px;
+      height: 26px;
+      margin-left: 4px;
+      background: url("/assets/image/common/cc-icons.png") no-repeat 0 0; }
+      .cc-img-box div:first-child {
+        margin-left: 0; }
+      .cc-img-box div.visa-box {
+        background-position: 0 0; }
+      .cc-img-box div.mastercard-box {
+        background-position: -46px 0; }
+      .cc-img-box div.discover-box {
+        background-position: -92px 0; }
+      .cc-img-box div.amex-box {
+        background-position: -140px 0; }
+  
+  .security-badges {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+    .security-badges a, .security-badges img {
+      display: inline-block; }
+    .security-badges .comodosecure {
+      margin-top: -34px; }
+  
+  .edit-shipping,
+  .cc-message {
+    text-align: center;
+    font-size: 14px; }
+  
+  .edit-shipping {
+    width: 200px;
+    display: block;
+    margin: 10px auto; }
+  
+  footer .container, .footer-container {
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 30px; }
+    footer .container p, .footer-container p {
+      font: 400 13px/1.5em "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: #8aa756;
+      text-align: center; }
+      footer .container p a, .footer-container p a {
+        color: #8aa756;
+        text-decoration: underline; }
+        footer .container p a:hover, .footer-container p a:hover {
+          text-decoration: none; }
+  
+  /* ===================== MEDIA QUERIES ====================== */
+  @media (min-width: 480px) {
+    .leaves-footer-bg {
+      width: 100%;
+      height: 165px;
+      margin-top: -70px;
+      background: url("/assets/image/common/lavender.png") no-repeat 0 0, url("/assets/image/common/sage-leaf.png") no-repeat right 0;
+      background-size: 200px; }
+    #storeModal .modal-img {
+      width: 50%; } }
+  
+  @media (min-width: 600px) {
+    #storeModal .modal-content {
+      padding: 10px 30px 15px 30px; }
+    #storeModal .modal-close {
+      padding-bottom: 10px; } }
+  
+  /* END @media > 600px */
+  @media (min-width: 768px) {
+    .logo {
+      float: left;
+      padding-top: 15px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      width: 145px;
+      height: 85px; }
+    .leaves-footer-bg {
+      height: 222px;
+      background-size: auto;
+      margin-top: -90px; }
+    #storeModal .modal-img {
+      margin-top: -20px;
+      width: auto; }
+    #storeModal .modal-body-right {
+      padding-left: 0; }
+    #storeModal .modal-slide-left {
+      left: -100px;
+      margin-bottom: 0; }
+      #storeModal .modal-slide-left:hover {
+        cursor: pointer; }
+    #storeModal .modal-slide-right {
+      right: -100px; }
+      #storeModal .modal-slide-right:hover {
+        cursor: pointer; }
+    #storeModal .modal-slide-left,
+    #storeModal .modal-slide-right {
+      display: inline-block;
+      position: absolute;
+      top: 145px;
+      font-size: 90px;
+      color: #fff;
+      padding: 25px;
+      text-shadow: 0 1px 1px #000; } }
+  
+  @media (min-width: 992px) {
+    .modal-dialog {
+      width: 740px; } }
+  
+  .header-container {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbf8;
+    border-bottom: 1px solid #ebebeb; }
+    .header-container button {
+      color: #688877;
+      font-size: 25px; }
+      .header-container button:hover {
+        color: #77af91;
+        cursor: pointer; }
+      .header-container button.active {
+        background-color: #fff;
+        border-bottom: 5px solid #a7d1be; }
+  
+  .logo {
+    width: 104px;
+    height: 52px;
+    margin: 0 auto; }
+  
+  .header-user-buttons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 20; }
+  
+  .navDropElm {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    background-color: #fff;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2); }
+    .navDropElm a {
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #664e43;
+      padding: 15px;
+      border-bottom: 1px solid #ebebeb; }
+      .navDropElm a:hover {
+        text-decoration: none;
+        background-color: #f1f0ef; }
+      .navDropElm a:focus {
+        text-decoration: none; }
+  
+  #cart-btn {
+    position: relative;
+    padding-right: 10px; }
+    #cart-btn.active {
+      background-color: transparent; }
+  
+  .cart-drop-container {
+    top: -355px;
+    right: 0;
+    z-index: 8;
+    width: 320px; }
+  
+  .cart-drop-box {
+    width: 100%;
+    min-height: 80px;
+    max-height: 355px;
+    overflow-y: auto; }
+    .cart-drop-box .no-items {
+      text-align: center;
+      font-weight: bold;
+      line-height: 80px;
+      margin: 0; }
+  
+  .cart-product {
+    display: table;
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb; }
+    .cart-product:first-child {
+      border-top: 0; }
+  
+  .cart-product-image,
+  .cart-product-info,
+  .cart-product-remove {
+    display: table-cell;
+    vertical-align: middle; }
+  
+  .cart-product-image {
+    width: 32%; }
+  
+  .cart-product-info {
+    width: 50%; }
+    .cart-product-info .cart-product-name {
+      line-height: 1.2em;
+      margin-bottom: 10px; }
+    .cart-product-info p {
+      margin-bottom: 5px; }
+  
+  .cart-product-remove {
+    width: 18%; }
+    .cart-product-remove button {
+      display: block;
+      width: 50px;
+      height: 70px;
+      padding: 20px 10px; }
+  
+  .cart-product-name {
+    font: 20px "Roboto Slab", "Times New Roman", serif;
+    color: #664e43;
+    text-transform: uppercase; }
+  
+  .cart-product-price,
+  .cart-product-qty,
+  .cart-product-volume {
+    font: 14px "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #664e43; }
+  
+  .cart-checkout {
+    padding: 5px 10px 10px;
+    border-top: 1px dashed #dedada; }
+    .cart-checkout .cart-checkout-btn {
+      position: relative;
+      z-index: -1;
+      opacity: 0.5;
+      width: 100%;
+      background-color: #d992ac;
+      color: #fff;
+      font-size: 18px;
+      text-transform: none;
+      font-weight: normal;
+      padding: 10px; }
+      .cart-checkout .cart-checkout-btn:hover {
+        background-color: #e69fb9; }
+      .cart-checkout .cart-checkout-btn.ready {
+        z-index: 0;
+        opacity: 1; }
+    .cart-checkout .cart-total {
+      margin: 0;
+      text-align: right;
+      padding-bottom: 5px;
+      color: #666;
+      font-size: 14px; }
+  
+  .cart-counter {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #d992ac;
+    border-radius: 50%;
+    border: 2px solid #fbfbf8;
+    color: #fff;
+    font: bold 12px "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    line-height: 20px; }
+  
+  @-moz-document url-prefix() {
+    .cart-counter {
+      line-height: 19px; } }
+  
+  /* ==================== MEDIA QUERIES --------------------- */
+  @media (min-width: 768px) {
+    .header-container {
+      height: 95px; }
+      .header-container button {
+        height: 95px; }
+        .header-container button.active {
+          padding-top: 7px; }
+    .header-box {
+      padding-right: 0; }
+    .logo {
+      float: left;
+      width: 145px;
+      height: 85px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0; }
+    h1 {
+      border-left: 1px solid #dcdcd9;
+      margin-left: 25px;
+      padding-left: 25px; }
+    .header-user-buttons {
+      position: static;
+      float: right; }
+      .header-user-buttons #questions {
+        width: 75px; }
+    .navDropElm {
+      position: fixed; }
+    .user-name {
+      display: inline-block;
+      max-width: 133px;
+      vertical-align: middle;
+      margin: 0 10px 0 0;
+      font-size: 18px;
+      color: #688877; }
+    #contact-form-desktop {
+      display: none;
+      background-color: #fff; }
+    #user-btn {
+      position: relative;
+      padding-left: 25px;
+      padding-right: 25px; }
+      #user-btn:hover {
+        cursor: pointer; }
+      #user-btn .fa-angle-down {
+        font-size: 20px;
+        margin-left: 5px; }
+      #user-btn .fa-exclamation-circle {
+        display: none;
+        color: #d992ac;
+        font-size: 15px;
+        position: absolute;
+        top: 23px;
+        right: 38px; }
+      #user-btn.active {
+        border-left: 1px solid #dcdcd9;
+        margin-left: -1px; }
+      #user-btn i {
+        vertical-align: middle; }
+    .user-btn-container {
+      float: right; }
+    .user-drop-container {
+      top: -64px;
+      right: 0;
+      z-index: 9;
+      width: 300px; }
+    .cart-counter {
+      top: 25px;
+      right: 16px; }
+    .questions-drop-container {
+      top: -64px;
+      right: 248px;
+      z-index: 7;
+      width: 300px; }
+    #cart-btn {
+      width: 75px;
+      padding-right: 5px;
+      margin-right: -1px; }
+      #cart-btn.active {
+        background-color: #fff;
+        border-left: 1px solid #dcdcd9;
+        border-right: 1px solid #dcdcd9; }
+    #questions-btn {
+      width: 75px; }
+      #questions-btn.active {
+        border-left: 1px solid #dcdcd9;
+        border-right: 1px solid #dcdcd9; }
+    .cart-drop-container {
+      right: 173px; }
+    .user-header-divider {
+      display: inline-block;
+      border-right: 1px solid #ded8d8;
+      width: 1px;
+      height: 40px;
+      padding: 12px 0;
+      margin-top: -7px; } }
+  
+  @media (min-width: 875px) {
+    .user-name {
+      max-width: none; } }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      padding-left: 110px; } }
+  
+  @media (min-width: 1200px) {
+    .footer-container {
+      width: 1000px; } }
+  
+  .nav-box {
+    display: none;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5e7b6c;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+  
+  .navbar-header {
+    width: 100%;
+    padding: 0; }
+  
+  .nav {
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    left: 0;
+    width: 100%; }
+    .nav a {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      padding: 15px 10px 15px 25px;
+      margin-bottom: 1px;
+      background-color: #688877;
+      transition: background-color 0.4s; }
+      .nav a:hover {
+        text-decoration: none;
+        background-color: #789887; }
+      .nav a:focus {
+        text-decoration: none; }
+      .nav a.selected {
+        background-color: #4e6459;
+        margin-top: -1px;
+        margin-bottom: 0; }
+      .nav a.slide-target {
+        background-color: #789887; }
+      .nav a i {
+        display: inline;
+        vertical-align: bottom;
+        font-size: 20px;
+        margin-right: 10px; }
+    .nav .mobile-subnav a {
+      background-color: #f4f3ea;
+      color: #664e43;
+      margin-bottom: 0;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #ebebeb;
+      font-size: 12px;
+      line-height: 1em; }
+      .nav .mobile-subnav a:hover {
+        background-color: #fbf8e2; }
+  
+  .mobile-nav {
+    background-color: transparent;
+    border: 0;
+    color: #534f50;
+    font-size: 20px;
+    padding: 11px 15px 11px 20px;
+    margin-top: -50px; }
+    .mobile-nav:focus {
+      outline: none; }
+  
+  #contact-form-mobile {
+    background-color: #f4f3ea; }
+  
+  .contact-form-mobile-container {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    display: none; }
+  
+  /* =============== MEDIA QUERIES ---------------- */
+  @media (min-width: 600px) {
+    .nav a {
+      text-align: center;
+      padding: 15px 25px; }
+      .nav a i {
+        display: block;
+        font-size: 40px;
+        margin: 0; } }
+  
+  @media (min-width: 768px) {
+    .nav-box {
+      display: block;
+      background-color: #5e7b6c;
+      box-shadow: none; }
+    .navbar-header {
+      width: 100%;
+      padding: 0; }
+    #dashboard .nav .home,
+    #store .nav .store,
+    #overview .nav .share,
+    #campaign .nav .share,
+    #platform .nav .share,
+    #message .nav .share,
+    #success .nav .share,
+    #commission .nav .reports,
+    #payout .nav .reports {
+      background-color: #4e6459;
+      margin-top: -1px;
+      margin-bottom: 0; }
+    .nav {
+      width: 95px;
+      top: 95px;
+      bottom: 0;
+      left: 0;
+      background-color: #688877; }
+      .nav a {
+        min-height: 87px;
+        font-size: 12px;
+        padding: 15px 0;
+        margin-bottom: 1px;
+        background-color: #688877; }
+        .nav a:hover {
+          text-decoration: none;
+          background-color: #789887; }
+        .nav a:focus {
+          text-decoration: none; }
+        .nav a i {
+          display: block;
+          font-size: 40px; }
+    .mobile-nav {
+      margin-top: 0; }
+    .contact-form-mobile-container {
+      display: none; } }
+  
+  body {
+    background-color: #f4f3ea; }
+  
+  body, html, p, li {
+    font-family: "Roboto", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #555555; }
+  
+  ul {
+    padding-left: 20px;
+    margin-bottom: 25px; }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: "Roboto Slab", "Times New Roman", serif; }
+  
+  h1 {
+    float: left;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #664e43; }
+  
+  h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 1.3em; }
+  
+  h5 {
+    font-size: 20px;
+    margin-bottom: 5px; }
+  
+  button {
+    border: 0;
+    background: none; }
+    button:focus {
+      outline: none; }
+  
+  input {
+    height: 50px;
+    width: 100%;
+    display: block; }
+  
+  input, textarea {
+    border: 2px solid #ebebeb;
+    padding: 10px;
+    font-size: 16px; }
+  
+  .primary-btn {
+    background-color: #f9804f;
+    color: #fff; }
+    .primary-btn:hover {
+      background-color: #f9713b; }
+  
+  .primary-outline-btn {
+    background-color: #fff;
+    border: 2px solid #f9804f; }
+    .primary-outline-btn:hover {
+      background-color: #f9713b; }
+  
+  .secondary-btn {
+    background-color: #4e6459;
+    color: #fff; }
+    .secondary-btn:hover {
+      background-color: #384940; }
+  
+  .headline-divider {
+    display: block;
+    margin: 17px auto;
+    width: 60px;
+    border-top: 5px solid #a7d1be; }
+  
+  .contact-form {
+    padding: 20px 20px 15px;
+    transition: .6s; }
+    .contact-form .submitSuccess {
+      display: none; }
+    .contact-form legend {
+      text-align: center;
+      font: 22px "Roboto Slab", "Times New Roman", serif;
+      border-bottom: 0;
+      color: #664e43;
+      margin: 0 0 10px; }
+    .contact-form p {
+      text-align: center;
+      color: #664e43; }
+    .contact-form textarea {
+      width: 100%;
+      height: 155px; }
+    .contact-form button {
+      text-align: center;
+      background-color: #d992ac;
+      padding: 10px;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px; }
+      .contact-form button:hover {
+        background-color: #e69fb9;
+        text-decoration: none; }
+    .contact-form button.mobile-contact-close {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: auto;
+      font-size: 20px;
+      margin: 0;
+      background-color: transparent;
+      color: #664e43; }
+  
+  /*# sourceMappingURL=mw_common.css.map */
+  

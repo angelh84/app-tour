@@ -1,0 +1,697 @@
+body.shareModal {
+    overflow: hidden; }
+  
+  .share-pop-section {
+    display: none; }
+    .share-pop-section h2, .share-pop-section h3, .share-pop-section a, .share-pop-section p, .share-pop-section li {
+      color: #fff; }
+    .share-pop-section h2 {
+      font-size: 28px;
+      border-bottom: 1px solid #bedac5;
+      padding-bottom: 40px;
+      margin-bottom: 25px;
+      text-align: center; }
+      .share-pop-section h2 i {
+        display: block;
+        font-size: 42px;
+        margin-bottom: 10px; }
+    .share-pop-section h3 {
+      font-size: 18px;
+      margin-top: -43px; }
+    .share-pop-section hr {
+      margin: 25px 0;
+      border-top-color: #5b7668; }
+    .share-pop-section .shareClose {
+      opacity: 1;
+      font-size: 28px;
+      color: #fff;
+      border: 0;
+      background: 0;
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      z-index: 1001; }
+    .share-pop-section .share-method-container {
+      position: relative;
+      z-index: -1;
+      opacity: 0.5;
+      text-align: center; }
+      .share-pop-section .share-method-container p {
+        font-family: "Roboto Slab", "Times New Roman", serif;
+        margin-top: 25px;
+        font-size: 18px; }
+    .share-pop-section .share-button {
+      display: inline-block;
+      border-left: 1px solid #86a092;
+      padding: 0 6%; }
+      .share-pop-section .share-button:first-child {
+        border: 0; }
+      .share-pop-section .share-button i {
+        font-size: 36px;
+        color: #fff; }
+    .share-pop-section .share-email {
+      padding-bottom: 10px; }
+      .share-pop-section .share-email .share-icon {
+        background-color: #72c8ae; }
+      .share-pop-section .share-email:hover .share-icon {
+        background-color: #78dcbe; }
+    .share-pop-section .share-facebook {
+      padding-bottom: 10px; }
+      .share-pop-section .share-facebook .share-icon {
+        background-color: #3b579d; }
+      .share-pop-section .share-facebook:hover .share-icon {
+        background-color: #5070bf; }
+    .share-pop-section .share-twitter {
+      border-left: 0;
+      margin-left: 5px;
+      border-top: 1px solid #86a092;
+      padding-top: 20px; }
+      .share-pop-section .share-twitter .share-icon {
+        background-color: #5ea9dd; }
+      .share-pop-section .share-twitter:hover .share-icon {
+        background-color: #6bbbf3; }
+    .share-pop-section .share-link {
+      border-top: 1px solid #86a092;
+      padding-top: 20px; }
+      .share-pop-section .share-link .share-icon {
+        background-color: #97b563; }
+      .share-pop-section .share-link:hover .share-icon {
+        background-color: #a2c564; }
+  
+  .share-pop-bg {
+    display: none;
+    background-color: rgba(104, 136, 119, 0.96);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: auto; }
+    .share-pop-bg .container {
+      display: block; }
+      .share-pop-bg .container .col-sm-12 {
+        float: none; }
+  
+  .step1-box h3::before,
+  .step2-box h3::before {
+    display: block;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #688877;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto 12px; }
+  
+  .step1-box {
+    padding-bottom: 15px; }
+    .step1-box h3::before {
+      content: "1"; }
+  
+  .step2-box {
+    padding-bottom: 30px; }
+    .step2-box h3::before {
+      content: "2"; }
+  
+  .share-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 94px;
+    margin: 0 auto; }
+  
+  .step2-box h3 {
+    margin-bottom: 40px; }
+  
+  .drop-down-container {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin-bottom: 15px; }
+  
+  .dropParent {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  
+  .dropSelectBox {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    border: 1px solid #3a4c43;
+    margin-bottom: 0;
+    padding: 10px 10px 10px 15px;
+    color: #58595b;
+    background-color: #597466;
+    font-size: 16px; }
+    .dropSelectBox:hover {
+      cursor: pointer; }
+    .dropSelectBox .fa-angle-down {
+      float: right;
+      color: #fff;
+      margin-top: 2px; }
+    .dropSelectBox .dropSelectBoxText {
+      display: inline; }
+  
+  .dropChildren {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    border-left: 1px solid #3a4c43;
+    border-right: 1px solid #3a4c43;
+    padding: 0; }
+    .dropChildren a {
+      display: block;
+      color: #fff;
+      background-color: #597466;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-bottom: 1px solid #3a4c43; }
+      .dropChildren a:hover {
+        text-decoration: none;
+        background-color: #688475; }
+      .dropChildren a:focus {
+        text-decoration: none;
+        color: #fff; }
+  
+  .commission15,
+  .commissionReferral {
+    display: none;
+    color: #fff; }
+  
+  @media (min-width: 600px) {
+    .drop-down-container {
+      width: 380px; }
+    .step2-box br {
+      display: none; }
+    .share-pop-section h2 br {
+      display: none; }
+    .share-pop-section .share-method-container a:first-child {
+      padding-left: 0; }
+    .share-pop-section .share-method-container a:last-child {
+      padding-right: 0; }
+    .share-pop-section .share-twitter {
+      margin-left: 0;
+      border-left: 1px solid #86a092;
+      border-top: 0;
+      padding-top: 0; }
+    .share-pop-section .share-link {
+      border-top: 0;
+      padding-top: 0; }
+    .share-pop-section .share-email,
+    .share-pop-section .share-facebook {
+      padding-bottom: 0; }
+    .share-pop-bg .container {
+      display: block; } }
+  
+  @media (min-width: 768px) {
+    .share-pop-section h2 {
+      font-size: 44px;
+      text-align: left;
+      margin-bottom: 40px;
+      padding-bottom: 20px; }
+      .share-pop-section h2 i {
+        display: inline-block;
+        font-size: 50px;
+        margin-right: 9px;
+        margin-bottom: 0; }
+    .share-pop-section h3 {
+      font-size: 24px;
+      margin-top: 0; }
+    .share-pop-section hr {
+      margin: 45px 0; }
+    .share-pop-section .shareClose {
+      padding: 20px;
+      font-size: 32px; }
+    .step1-box,
+    .step2-box {
+      padding-left: 66px; }
+      .step1-box h3::before,
+      .step2-box h3::before {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: -67px; }
+    .step1-box {
+      padding-bottom: 0; }
+    .share-pop-bg .container .col-sm-12 {
+      margin-top: 40px; } }
+  
+  @media (min-height: 660px) and (min-width: 768px) {
+    .share-pop-bg .container .col-sm-12 {
+      margin-top: 125px; } }
+  
+  @media (min-width: 992px) {
+    .share-pop-bg .container .col-sm-12 {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto; } }
+  
+  .section-title {
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb; }
+    .section-title h2 {
+      text-align: center;
+      font-size: 26px;
+      padding-top: 20px;
+      margin-top: 0; }
+    .section-title .share-pop-btn {
+      display: block;
+      background-color: #d992ac;
+      color: #fff;
+      padding: 10px 30px;
+      margin: 20px auto;
+      font-size: 18px;
+      text-align: center; }
+      .section-title .share-pop-btn:hover {
+        text-decoration: none;
+        background-color: #e69fb9; }
+      .section-title .share-pop-btn:focus {
+        text-decoration: none; }
+  
+  .dashboard-content {
+    padding-top: 50px; }
+    .dashboard-content .row > div {
+      margin-bottom: 15px; }
+    .dashboard-content .row .dashboard-left-content {
+      margin-bottom: 0; }
+  
+  .dashboard-left-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .dashboard-left-content .row:nth-child(1) {
+      -ms-flex-order: 1;
+      order: 1; }
+    .dashboard-left-content .row:nth-child(2) {
+      -ms-flex-order: 3;
+      order: 3; }
+    .dashboard-left-content .row:nth-child(3) {
+      -ms-flex-order: 2;
+      order: 2; }
+  
+  .dashboard-wrapper {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 20px 15px; }
+    .dashboard-wrapper h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 21px;
+      color: #664e43;
+      margin: 0; }
+    .dashboard-wrapper h4 {
+      font-size: 18px;
+      color: #664e43;
+      text-transform: uppercase;
+      text-align: center; }
+  
+  .user-settings-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding: 7px 15px;
+    font-size: 26px;
+    color: #8c7d76; }
+  
+  .user-photo {
+    display: block;
+    position: relative;
+    width: 134px;
+    height: 134px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden; }
+    .user-photo:hover::after {
+      content: "\f030";
+      font-family: FontAwesome;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      margin-left: -13px;
+      color: #fff;
+      text-shadow: 1px 2px 1px #828282;
+      bottom: 10px;
+      font-size: 20px; }
+    .user-photo img {
+      position: absolute;
+      top: 0; }
+  
+  .milestone-icons-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .milestone-icons-container .icon-box {
+      width: 75px;
+      height: 75px;
+      background-image: url("../images/achievement-icons.png");
+      background-size: 365px;
+      margin: 10px 5px;
+      opacity: .3; }
+      .milestone-icons-container .icon-box.unlocked {
+        opacity: 1; }
+  
+  .icon-lock {
+    background-position: 83px -7px; }
+  
+  .icon-question {
+    background-position: -9px 327px; }
+  
+  .icon-airplane {
+    background-position: -145px -7px; }
+  
+  .icon-gift {
+    background-position: -9px -7px; }
+  
+  .icon-camera {
+    background-position: -145px 82px; }
+  
+  .icon-book {
+    background-position: 83px -128px; }
+  
+  .icon-bag {
+    background-position: -146px 204px; }
+  
+  .icon-map {
+    background-position: -10px 82px; }
+  
+  .milestones-box .dashboard-wrapper {
+    padding: 35px 5px; }
+  
+  .milestones-box .coming-soon-container {
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 16px;
+    bottom: 1px;
+    left: 16px;
+    background-color: rgba(255, 255, 255, 0.8); }
+  
+  .milestones-box .coming-soon-box {
+    display: table;
+    width: 100%;
+    height: 100%; }
+  
+  .milestones-box .coming-soon-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold; }
+    .milestones-box .coming-soon-content i {
+      font-size: 30px; }
+    .milestones-box .coming-soon-content p {
+      font-size: 26px;
+      line-height: 1em;
+      color: #555; }
+      .milestones-box .coming-soon-content p span {
+        display: block;
+        font-size: 20px;
+        font-weight: normal;
+        color: #688877; }
+  
+  .status-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px dashed #9e263e;
+    margin: 30px auto 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 21px;
+    color: #9e263e; }
+  
+  .status-headline {
+    font: 22px "Roboto Slab", "Times New Roman", serif;
+    text-align: center;
+    color: #9e263e;
+    text-transform: uppercase; }
+  
+  .articles-box a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #555555;
+    line-height: 1.5em;
+    font-size: 15px;
+    margin-bottom: 10px; }
+    .articles-box a:first-of-type {
+      margin-top: 10px; }
+    .articles-box a:hover {
+      text-decoration: none; }
+  
+  .help-box .dashboard-wrapper {
+    border: 1px solid #a7d1be;
+    background-color: #a7d1be;
+    text-align: center;
+    padding: 0; }
+    .help-box .dashboard-wrapper:hover {
+      background-color: #98dabc; }
+    .help-box .dashboard-wrapper i {
+      color: #fff;
+      font-size: 70px; }
+    .help-box .dashboard-wrapper p {
+      color: #fff;
+      font: bold 45px/1em "Roboto Slab", "Times New Roman", serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 20px; }
+    .help-box .dashboard-wrapper button {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 241px;
+      margin: 0 auto;
+      text-decoration: none; }
+      .help-box .dashboard-wrapper button:focus {
+        outline: none;
+        text-decoration: none; }
+  
+  .recommended-box a {
+    display: block; }
+    .recommended-box a:hover {
+      text-decoration: none; }
+      .recommended-box a:hover .dashboard-wrapper {
+        background-color: #fbfbf8; }
+  
+  .recommended-box h4 br {
+    display: none; }
+  
+  .recommended-product-img {
+    width: 150px;
+    margin: 0 auto; }
+  
+  .recommended-product-name {
+    color: #664e43;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  
+  .recommended-product-price {
+    color: #664e43;
+    text-align: center;
+    font-size: 15px; }
+  
+  .user-box .dashboard-wrapper {
+    padding: 20px 15px; }
+  
+  .payouts-box p {
+    text-align: center;
+    color: #664e43; }
+  
+  .payouts-box .dashboard-wrapper {
+    background: #fff url("../images/payout-icon.png") no-repeat -71px 0/contain;
+    padding: 20px 15px; }
+  
+  .lifetime-payout-amount {
+    font-size: 50px;
+    margin-bottom: 0; }
+  
+  .pending-payout-amount {
+    font-size: 15px; }
+    .pending-payout-amount span {
+      font-style: italic; }
+  
+  #upload_modal .modal-dialog {
+    margin: 30px auto;
+    width: 90%; }
+  
+  #upload_modal .btn-primary {
+    background-color: #688877; }
+  
+  #upload_modal #upload {
+    background-color: #d992ac;
+    border: 0; }
+  
+  /* ================== MEDIA QUERIES --------------------- */
+  @media (min-width: 480px) {
+    .milestone-icons-container .icon-box {
+      width: 85px;
+      height: 85px;
+      background-size: 410px; }
+    .milestones-box .coming-soon-content p {
+      font-size: 28px; }
+    .section-title .share-pop-btn {
+      width: 80%; }
+    #upload_modal .modal-dialog {
+      width: 420px; }
+    .icon-lock {
+      background-position: 94px -7px; }
+    .icon-question {
+      background-position: -10px 368px; }
+    .icon-airplane {
+      background-position: -163px -7px; }
+    .icon-gift {
+      background-position: -10px -7px; }
+    .icon-camera {
+      background-position: -162px 93px; }
+    .icon-book {
+      background-position: 94px -144px; }
+    .icon-bag {
+      background-position: -162px 229px; }
+    .icon-map {
+      background-position: -10px 93px; } }
+  
+  @media (min-width: 600px) {
+    .articles-box {
+      text-align: center; } }
+  
+  @media (min-width: 768px) {
+    .mw-program-container {
+      padding-left: 110px; }
+    .dashboard-content {
+      padding-top: 95px; }
+    .dashboard-left-content {
+      display: block;
+      padding-right: 15px; }
+    .dashboard-right-content {
+      padding-left: 8px; }
+    .articles-box {
+      text-align: left; }
+    .help-box .dashboard-wrapper {
+      display: table;
+      width: 100%; }
+      .help-box .dashboard-wrapper button {
+        display: table-cell;
+        vertical-align: middle;
+        min-height: 324px; }
+    .section-title {
+      height: 86px; }
+      .section-title .share-pop-btn {
+        float: right;
+        text-align: left;
+        width: auto; }
+      .section-title h2 {
+        padding: 0;
+        text-align: left;
+        float: left;
+        line-height: 82px;
+        margin: 0 0 0 20px; }
+    .user-box .dashboard-wrapper {
+      padding: 40px 15px; } }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-wrapper {
+      padding: 15px 10px; }
+    .dashboard-left-content .dashboard-wrapper {
+      padding: 20px 10px; }
+    .dashboard-right-content {
+      padding-left: 15px; }
+    .user-box {
+      padding-right: 8px; }
+    .payouts-box {
+      padding-left: 7px; }
+      .payouts-box h4 {
+        margin-top: 25px; }
+    .help-box {
+      padding-left: 7px; }
+    .recommended-box {
+      padding-right: 8px; }
+    .user-box .dashboard-wrapper,
+    .payouts-box .dashboard-wrapper {
+      min-height: 260px; }
+    .help-box .dashboard-wrapper,
+    .recommended-box .dashboard-wrapper {
+      min-height: 323px; }
+    .milestone-icons-container .icon-box {
+      margin: 10px 15px; } }
+  
+  @media (min-width: 992px) {
+    .dashboard-left-content {
+      padding-right: 7px; }
+    .status-box,
+    .recommended-box {
+      padding-right: 8px; }
+    .articles-box,
+    .help-box {
+      padding-left: 7px; }
+    .articles-box .dashboard-wrapper,
+    .status-box .dashboard-wrapper {
+      min-height: 280px; }
+    .milestone-icons-container {
+      width: 393px; }
+    .recommended-box h4 br {
+      display: block; }
+    .recommended-box .dashboard-wrapper,
+    .help-box .dashboard-wrapper {
+      min-height: 355px; }
+    .payouts-box .dashboard-wrapper {
+      padding: 125px 15px; }
+    .help-box .dashboard-wrapper button {
+      min-height: 403px; }
+    .milestones-box .coming-soon-box p {
+      font-size: 38px; }
+    .milestones-box .coming-soon-box p span {
+      font-size: 26px; }
+    .help-box .dashboard-wrapper button {
+      min-height: 357px; } }
+  
+  @media (min-width: 1200px) {
+    .articles-box .dashboard-wrapper,
+    .status-box .dashboard-wrapper {
+      min-height: 225px; }
+    .help-box .dashboard-wrapper button {
+      min-height: 333px; } }
+  
+  @media (min-width: 1220px) {
+    .recommended-box h4 br {
+      display: none; }
+    .recommended-box .dashboard-wrapper,
+    .help-box .dashboard-wrapper {
+      min-height: 335px; }
+    .payouts-box .dashboard-wrapper {
+      padding: 113px 15px; } }
+  
+  @media (min-width: 1680px) {
+    .articles-box {
+      text-align: center; } }
+  
+  /*# sourceMappingURL=dashboard.css.map */
+  
