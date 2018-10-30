@@ -1,33 +1,33 @@
 var tourModule = function(){
-    var S;
+    var settings;
     var $currentSlide;
     var $nextSlide;
     var $nextTarget;
     var nextSlideInteger;
 
-    var initialize = function(settings) {
-        S = settings;
+    var initialize = function(appSettings) {
+        settings = appSettings;
         initialUIActions();
     };
 
     var initialUIActions = function () {
-        S.tourContainer.show();
-        S.firstStep.addClass(S.currentClass);
+        settings.tourContainer.show();
+        settings.firstStep.addClass(settings.currentClass);
         setTimeout(function(){
-            S.tourBG.css('opacity', 1);
+            settings.tourBG.css('opacity', 1);
         }, 250);
         setTimeout(function(){
-            S.tourStepBox.css('opacity', 1).addClass('slide-1-active');
+            settings.tourStepBox.css('opacity', 1).addClass('slide-1-active');
         }, 500);
     };
 
     var nextSlideActions = function () {
         nextSlideNum();
-        $nextTarget = S.targetObjects[nextSlideInteger - 2];
+        $nextTarget = settings.targetObjects[nextSlideInteger - 2];
         $currentSlide = $('#' + currentSlideID());
         $nextSlide = $('#slide-' + nextSlideInteger);
 
-        if ( nextSlideInteger <= S.slideContent.length ) {
+        if ( nextSlideInteger <= settings.slideContent.length ) {
             slideFadeOut( animateToNextSlide );
         } else {
             exitActions();
@@ -35,16 +35,16 @@ var tourModule = function(){
     };
 
     var slideFadeOut = function ( callback ) {
-        S.tourArrow.fadeOut();
-        S.tourSlideCount.fadeOut();
-        $('.' + S.targetClass).removeClass(S.targetClass);
+        settings.tourArrow.fadeOut();
+        settings.tourSlideCount.fadeOut();
+        $('.' + settings.targetClass).removeClass(settings.targetClass);
         $currentSlide.fadeOut( callback );
     };
 
     var animateToNextSlide = function () {
         slideCount();
-        S.tourStepBox.removeClass('slide-' + (nextSlideInteger - 1) + '-active');
-        S.tourStepBox.addClass('slide-' + nextSlideInteger + '-active');
+        settings.tourStepBox.removeClass('slide-' + (nextSlideInteger - 1) + '-active');
+        settings.tourStepBox.addClass('slide-' + nextSlideInteger + '-active');
         setTimeout(function () {
             slideFadeIn();
             offScreenAnimation();
@@ -54,7 +54,7 @@ var tourModule = function(){
     var offScreenAnimation = function () {
         var targetBoxHeight = $nextTarget.outerHeight();
         var targetBoxTopOffset = $nextTarget.offset().top;
-        var slideBoxTopOffset = S.tourStepBox.offset().top;
+        var slideBoxTopOffset = settings.tourStepBox.offset().top;
         var winHeight = $(window).height();
         var winScrollTop = $(window).scrollTop();
 
@@ -66,17 +66,17 @@ var tourModule = function(){
     };
 
     var slideFadeIn = function ( callback ) {
-        $currentSlide.removeClass(S.currentClass);
-        S.tourArrow.fadeIn();
-        S.tourSlideCount.fadeIn();
-        $nextSlide.fadeIn( callback ).addClass(S.currentClass);
+        $currentSlide.removeClass(settings.currentClass);
+        settings.tourArrow.fadeIn();
+        settings.tourSlideCount.fadeIn();
+        $nextSlide.fadeIn( callback ).addClass(settings.currentClass);
         setTimeout(function(){
-            $nextTarget.addClass(S.targetClass);
+            $nextTarget.addClass(settings.targetClass);
         }, 125);
     };
 
     var currentSlideID = function () {
-        return $('.' + S.currentClass).attr('id');
+        return $('.' + settings.currentClass).attr('id');
     };
 
     var nextSlideNum = function () {
@@ -86,18 +86,18 @@ var tourModule = function(){
     };
 
     var slideCount = function () {
-        var count = S.slideContent.length - 1;
+        var count = settings.slideContent.length - 1;
         var currentSlide = currentSlideID().replace('slide-', '');
-        S.tourSlideCount.text(currentSlide + '/' + count);
+        settings.tourSlideCount.text(currentSlide + '/' + count);
     };
 
     var exitActions = function () {
-        S.tourStepBox.css('opacity', 0);
+        settings.tourStepBox.css('opacity', 0);
         setTimeout(function(){
             $('body, html').animate({ scrollTop : 0 });
-            S.tourBG.css('opacity', 0);
+            settings.tourBG.css('opacity', 0);
         },250);
-        window.location.href = S.finishedRedirect;
+        window.location.href = settings.finishedRedirect;
     };
 
     return {
